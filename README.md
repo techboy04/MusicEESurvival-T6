@@ -2,7 +2,7 @@
 I noticed that while playing a shit ton of Survival maps that there is a lack of the secret music teddy bears in those maps.
 So I decided to take liberty in adding it myself.
 
-Screenshots of the Teddy Bear Locations are in the Wiki page.
+Screenshots of the Teddy Bear Locations are in this Wiki page: https://github.com/techboy04/MusicEESurvival-T6/wiki/Teddy-Bear-Locations
 
 ## Installation
 Download secretsongsurvival.gsc and put it in your Plutonium T6 scripts folder
