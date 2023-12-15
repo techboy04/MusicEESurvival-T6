@@ -11,7 +11,6 @@ main()
 init()
 {
     level thread setteddybears();
-    level.teddybears = 0;
     
     level thread onPlayerConnect();
 }
@@ -29,11 +28,11 @@ onPlayerSpawned()
 {
     self endon("disconnect");
 	level endon("game_ended");
+	self.teddybears = 0;
     for(;;)
     {
         self waittill("spawned_player");
 		
-		// Will appear each time when the player spawn, that's just an exemple.
 		self iprintln("^4Secret Music Easter Egg in Survival maps ^7created by ^1techboy04gaming");
     }
 }
@@ -50,15 +49,12 @@ spawnTeddyBear(x,y,z,angle)
 		TeddyTrigger waittill( "trigger", i );
 		if ( i usebuttonpressed() )
 		{
-			level.teddybears += 1;
+			i.teddybears += 1;
 			i playsound( "zmb_meteor_activate" );
 			
-			if (level.teddybears == 3) 
+			if (i.teddybears == 3) 
 			{
-				foreach (player in level.players)
-				{
-					player playsound("mus_zmb_secret_song");
-				}
+				i playsound("mus_zmb_secret_song");
 			}
 			
 			break;
