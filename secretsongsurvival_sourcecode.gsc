@@ -1,13 +1,3 @@
-/*
-*	 Black Ops 2 - GSC Studio by iMCSx
-*
-*	 Creator : djc10
-*	 Project : survivalteddybears
-*    Mode : Zombies
-*	 Date : 2023/03/24 - 11:28:10	
-*
-*/	
-
 #include maps\mp\_utility;
 #include common_scripts\utility;
 #include maps\mp\gametypes_zm\_hud_util;
